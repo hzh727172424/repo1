@@ -1,0 +1,15 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: cart-service
+  redis:
+    host: 192.168.52.128
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+ly:
+  jwt:
+      pubKeyPath: F:\\tmp\\rsa\\rsa.pub
+      cookieName: LY_TOKEN

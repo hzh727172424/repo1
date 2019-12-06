@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: page-service
+  thymeleaf:
+    cache: false
+  rabbitmq:
+        virtual-host: /leyou
+        username: leyou
+        password: leyou
+        host: 192.168.52.128
+server:
+  port: 8085
+eureka:
+  client:
+    service-url:
+       defaultZone:  http://localhost:10086/eureka
+    registry-fetch-interval-seconds: 5

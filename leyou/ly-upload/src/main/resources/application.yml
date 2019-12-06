@@ -1,0 +1,31 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: upload-service
+  servlet:
+    multipart:
+      max-file-size: 5MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+fdfs:
+  so-timeout: 2500
+  connect-timeout: 600
+  thumb-image: #缩略图
+    width: 60
+    height: 60
+  tracker-list:
+     - 192.168.153.128:22122   #tracker地址
+leyou:
+    upload:
+      allowType:
+            - image/jpeg
+            - image/bmp
+            - image/png
+            - image/jpg
+      baseUrl: http://image.leyou.com/
